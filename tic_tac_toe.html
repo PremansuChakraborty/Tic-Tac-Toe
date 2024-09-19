@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="tic_tac_toe.css">
+    <title>Tic_Tac_Toe</title>
+</head>
+<body>
+    <div class="head">
+        <h1 class="winner"></h1>
+        <br>
+        <button class="button" id="newGame">New Game</button>
+    </div>
+
+    <div class="form">
+        <img src="pic.png">
+        <label for="name1">Enter First Player</label>
+            <input id="input1" type="text" placeholder="Enter First Player">
+            <label for="name1">Enter Second Player</label>
+            <input id="input2" type="text" placeholder="Enter Second Player">
+            <button type="submit" class="button" id="play">Play</button>
+    </div>
+
+    <h1> Tic_Tac_Toe </h1>
+    
+    <h3 id="turn"></h3>
+    <div class="main">
+        <div class="container">
+            <div class="table">
+                <h2>Scoreboard</h2>
+                <table>
+                    <tr>
+                        <th>NAME</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td class="playerName">Player1</td>
+                        <td class="playerScore">0</td>
+                    </tr>
+                    <tr>
+                        <td class="playerName">Player2</td>
+                        <td class="playerScore">0</td>
+                    </tr>
+                </table>
+                <button class="button" id="scoreReset">Reset</button>
+            </div>
+            <div class="setBox">
+            <div class="board">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+    </div>
+    <div id="reset">
+        <button class="button" >Reset</button>
+    </div>
+</div>
+</div>
+</div>
+<script src="tic_tac_toe.js"></script>
+</body>
+</html>
