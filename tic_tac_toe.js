@@ -135,3 +135,28 @@ scoreReset.addEventListener("click",()=>{
     score[0].innerText=0;
     score[1].innerText=0;
 })
+
+
+// Get the button element
+const toggleButton = document.getElementById("toggleButton");
+
+// Check if dark mode is saved in localStorage
+if (localStorage.getItem("darkMode") === "enabled") {
+    document.body.classList.add("dark-mode");
+    toggleButton.textContent = "Light Mode";
+}
+
+// Add event listener to toggle dark mode
+toggleButton.addEventListener("click", () => {
+    // Toggle the dark mode class on the body
+    document.body.classList.toggle("dark-mode");
+
+    // Check if dark mode is enabled and update localStorage
+    if (document.body.classList.contains("dark-mode")) {
+        toggleButton.textContent = "Light Mode";
+        localStorage.setItem("darkMode", "enabled");
+    } else {
+        toggleButton.textContent = "Dark Mode";
+        localStorage.setItem("darkMode", "disabled");
+    }
+});
